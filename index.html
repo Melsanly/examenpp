@@ -1,55 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
- <META http-equiv="Content-Type" content="text/html; charset=utf-8">
- <title>mi pagina web</title>
- <link rel="stylesheet" type="text/css" href="estilo.css">
-</head>
+<title> validacion de claves iguales </title>
+  <link rel="stylesheet" type="text/css" href="estil.css">
+<script>
+function comprobarClave () {
+ clave1 = document.f1.clave1.value
+ clave2 = document.f1.clave2.value
+
+  if (clave1== "Lesly"&& clave2 == "Lopez"){
+     alert ("los datos que coinciden...\n bienvenido");
+     var href = "pagina.html";
+      window.location=href;
+     }
+  else{
+      alert ("las dos claves son distintas...\n INTENTELO DE NUEVO.")  
+      var href = "index.html";
+      window.location=href;
+      };
+   };
+ 
+ </script>
+ </head>
  <body>
-    
- <h1><div class="p5"><center><b><i>Lurexy Cleaning</i></b></center></div></h1>
+	
+ <h1> validar si la contraseña y la repeticion de la contraseña son iguales </h1>
+ <br>
+ escribir una contraseña dos veces en el mismo campo y pulsar el boton. Javascript dira si son iguales las dos.
+ <br>
+ <form action="" name="f1">
+ 	<h1>ingresar</h1>
+<label for="password">contraseña: <input type="password" name="clave1" size="20"></label>
+ <br>
+ <label for="password">repetir contraseña:<input type= "password" name="clave2" size="20" bgcolor="red"></label>
+ <br>
+ <p class ="p-container">
+ <input type="button" value="comprobar si son iguales" onClick="comprobarClave()">
+</p> 
+ </form>
+ </dody>
+ </html>
 
-     <div id="menu">
- <ul>
-        <li id="item-uno">
-    <a href="productos.html" target="_blank">
-      Productos
-
-    </a>
-  </li>
-
-
-        <li id="item-dos">
-    <a href="sobrenosotros.html" target="_blank">
-      sobre lurexy
-    </a>
-   </li> 
-
-    <li id="item-tres">
-    <a href="contactanos.html" target="_blank">
-      contactanos
-    </a>
-</li>
-</ul>
-</div>
-<center><aling="text"><img class="circular" src="logo.png" width="30%"></center></aling>
-           
-         <h2><div class="parrafo1"> MISIÓN </div></h2 >
-         <p1 > <div class = " parrafo1 " >Nos emociona y apasiona poder ofrecer a las familias guatemaltecas bienestar atreves de nuestro producto brindándole calidad garantizada, con instalaciones innovadoras y modernas, perfectas para nuestros clientes que buscan un trato justo, contamos con un marco de honestidad, responsabilidad, respeto y confianza que cada día nos esforzamos para transmitir a nuestros clientes y que atraves de del tiempo logremos ganarnos totalmente su confianza</p1></div>
-          
-       
-
-         <h2 ><div class="parrafo1">VISIÓN </div></h2 >
-         <p > <div  class = " parrafo1 " >Pasar de una respetable empresa que ofrece productos de limpieza, a una confiable, respetada y reconocida empresa de productos de limpieza, ser una empresa líder en el mercado de la limpieza.
- ganando totalmente la confiabilidad del cliente y lograr que estos mismos nos hagan crecer a grandes escaladas dándonos a conocer con más posibles clientes, y confiamos en nuestro desempeño que pronto seremos reconocidos en otros países proporcionando uno de los mejores productos de limpieza que posiblemente llegara a satisfacer en todos los ámbitos las necesidades de la población.</p ></div>
-    
-
-
-    
-    <footer  class = " pie " > 
-        <p  class = " pie " >Lesly Suying lópez avila, 6to perito en administación, 2020  </p >
-
-</footer>
-  </div>
-</body>
-</html>
+  
